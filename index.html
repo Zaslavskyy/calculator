@@ -10,11 +10,10 @@
      <section class="calc">
         <h1>Calculator</h1>
         <form>
-        <input class="display" type="text" value="0" disabled>
+        <input class="display" type="text" value="0" id="backspace" readonly>
         <input type="reset" value="C">
-        
+        <input type="button" onclick="back()" value="<--">
         </form>
-        
         <button class="num">1</button>
         <button class="num">2</button>
         <button class="num">3</button>
@@ -25,12 +24,14 @@
         <button class="num">8</button>
         <button class="num">9</button>
         <button class="num">0</button>
+        <button class="num">.</button>
+        <br>
         <button class="op">+</button>
         <button class="op">-</button>
         <button class="op">*</button>
         <button class="op">/</button>
         <button class="eq">=</button>
-        
+        <br>
 </section>
 <script src="js/index.js"></script>
 </body>

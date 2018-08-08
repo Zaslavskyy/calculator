@@ -12,3 +12,8 @@ document.querySelector('.calc .eq')
         display.value = eval(display.value);        
 })
 
+function back() {
+    var value = document.getElementById("backspace").value;
+    document.getElementById("backspace").value = value.substr(0, value.length - 1);
+}
+
