@@ -16,4 +16,15 @@ function back() {
     var value = document.getElementById("backspace").value;
     document.getElementById("backspace").value = value.substr(0, value.length - 1);
 }
-
+document.querySelector('.calc .sqrt')
+    .addEventListener('click', function(){
+        display.value = Math.sqrt(display.value);        
+})
+document.querySelector('.calc .cos')
+    .addEventListener('click', function(){
+        display.value = Math.cos(display.value);        
+})
+document.querySelector('.calc .sin')
+    .addEventListener('click', function(){
+        display.value = Math.sin(display.value);        
+})
